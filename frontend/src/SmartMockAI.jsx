@@ -22,6 +22,11 @@ function SmartMockAI() {
     }
   }, [theme]);
 
+  // Reset scroll to top on phase transitions
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [phase]);
+
   // Interview settings
   const [role, setRole] = useState('Frontend Developer');
   const [difficulty, setDifficulty] = useState('Mid-level');
