@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import './App.css';
 
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5002';
+
 function SmartMockAI() {
   // App Phase: 'setup' | 'interview' | 'dashboard'
   const [phase, setPhase] = useState('setup');
@@ -191,7 +193,7 @@ function SmartMockAI() {
     setCurrentRound(1);
     setAnswer('');
     try {
-      const response = await fetch('http://localhost:5002/api/interview/start', {
+      const response = await fetch(`${API_BASE_URL}/api/interview/start`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ jobRole: role, difficulty })
@@ -220,7 +222,7 @@ function SmartMockAI() {
 
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5002/api/interview/respond', {
+      const response = await fetch(`${API_BASE_URL}/api/interview/respond`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
