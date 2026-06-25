@@ -1,6 +1,6 @@
 # 🎙️ SmartMock AI - Interview Analyzer
 
-**Live Deployment Link:** https://interview-analyzer-ten.vercel.app **
+**Live Deployment Link:** https://interview-analyzer-ten.vercel.app
 
 SmartMock AI is an intelligent, AI-powered interview practice helper that analyzes candidate answers for specific job roles. Using the state-of-the-art **Gemini 2.5 Flash** model, it reviews user answers for clarity, technical accuracy, and pacing issues (like usage of filler words), providing actionable feedback and a polished, improved version of the answer.
 
