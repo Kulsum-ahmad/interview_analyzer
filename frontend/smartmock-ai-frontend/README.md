@@ -1,18 +1,55 @@
-# React + Vite
+# 🎨 SmartMock AI - Frontend Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SmartMock AI Frontend is a responsive, highly interactive React application designed to simulate and evaluate technical interviews. Built using **React 19**, **Vite**, and **Vanilla CSS**, it features a premium glassmorphic UI, harmonious teal-and-cyan palette, and real-time visualization features.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **Premium Teal/Cyan Design**: A curated color palette optimized for dark/light modes with glassmorphic cards and crisp borders.
+- **Audio Soundwave Visualizer**: An active visualizer card at the top simulating voice recording/setup state to capture the user's focus.
+- **Horizontal Configuration Controls**: Streamlined selector inputs for 16 technical disciplines and difficulty levels placed above the fold.
+- **Interactive Multi-Round Mock Panels**:
+  - Live chat-style transcript showing past questions and candidate answers.
+  - Sticky progress/navigation buttons for seamless step transitions.
+  - Sidebar feedback dashboard showing immediate ratings, rephrase suggestions, and filler word detection.
+- **Integrated Feedback/Contact Portal**: Dedicated form at the footer to let users directly submit feature requests, bug reports, and suggestions.
+- **Dynamic Theme Switcher**: Toggle between light and dark modes instantly with a clean circular emoji button.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🛠️ Tech Stack & Architecture
 
-## Expanding the ESLint configuration
+- **React 19**: Powered by standard stateful hooks (`useState`, `useRef`, `useEffect`).
+- **Vanilla CSS**: Curated custom gradients (`background: linear-gradient(135deg, var(--bg-start), var(--bg-end))`), HSL tailwind-free variables, and custom micro-animations (pulsing waves, active glowing state, and card-lift hover effects).
+- **Vite**: Lightweight dev compiler with Hot Module Replacement (HMR).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Running the Client
+
+### Prerequisites
+* Ensure the [Backend Server](file:///c:/interview-analyzer-backend/backend/README.md) is running on port `5002`.
+
+### Getting Started
+
+1. Install modern dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Start the Vite development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:5173](http://localhost:5173) in your web browser.
+
+---
+
+## 📂 Code Layout
+
+* `src/main.jsx`: Main client entry point.
+* `src/App.jsx`: Global wrapper handling theme context and overall shell.
+* `src/SmartMockAI.jsx`: Primary interface managing interview state machine, API coordination, and validation.
+* `src/App.css` / `src/index.css`: Key stylesheet variables, layout flexboxes, animation keyframes, and themes.
