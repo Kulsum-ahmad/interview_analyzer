@@ -1,5 +1,7 @@
 # 🎙️ SmartMock AI - Interview Analyzer
 
+**Live Deployment Link:** [https://your-vercel-deployment-link.vercel.app](https://your-vercel-deployment-link.vercel.app)
+
 SmartMock AI is an intelligent, AI-powered interview practice helper that analyzes candidate answers for specific job roles. Using the state-of-the-art **Gemini 2.5 Flash** model, it reviews user answers for clarity, technical accuracy, and pacing issues (like usage of filler words), providing actionable feedback and a polished, improved version of the answer.
 
 ---
@@ -43,16 +45,15 @@ interview-analyzer/
 │   ├── package.json          # Backend dependencies and scripts
 │   └── package-lock.json
 └── frontend/
-    └── smartmock-ai-frontend/
-        ├── src/
-        │   ├── main.jsx      # Entrypoint
-        │   ├── App.jsx       # Layout shell
-        │   ├── SmartMockAI.jsx # Main analyzer component UI and logic
-        │   ├── index.css     # Base styles
-        │   └── App.css       # App-specific UI styles
-        ├── package.json      # Frontend configuration & dependencies
-        ├── vite.config.js    # Vite configuration
-        └── index.html        # HTML template
+    ├── src/
+    │   ├── main.jsx      # Entrypoint
+    │   ├── App.jsx       # Layout shell
+    │   ├── SmartMockAI.jsx # Main analyzer component UI and logic
+    │   ├── index.css     # Base styles
+    │   └── App.css       # App-specific UI styles
+    ├── package.json      # Frontend configuration & dependencies
+    ├── vite.config.js    # Vite configuration
+    └── index.html        # HTML template
 ```
 
 ---
@@ -94,7 +95,7 @@ interview-analyzer/
 
 1. Navigate to the frontend workspace folder:
    ```bash
-   cd ../frontend/smartmock-ai-frontend
+   cd ../frontend
    ```
 
 2. Install frontend dependencies:
